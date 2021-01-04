@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table align="center" border="1px" bordercolor="grey">
+
+        <tr>
+            <td>
+                <h1>
+                    <center>
+                        <font face="Calibri">formulario de Registro</font>
+                    </center>
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <form action="mailto:raul.rodriguez@universidadeuropea.es" method="get">
+                    <h2>
+                        <font face="Calibri">Datos de la cuenta
+                    </h2>
+                    </legend>
+                    <p>Usuario: <br>
+                        <input type="text" name="Usuario" maxlength="50" required placeholder="Usuario" size="37"></p>
+
+                    <p>Correo electrónico: <br>
+                        <input type="email" required placeholder="nombre@ejemplo.com" size="37"></p>
+
+                    <p><label for="contra">Contraseña: </label><br>
+                        <input type="password" name="pass" id="" required minlength="5" maxlength="20" size="37"
+                            inputmode="verbatim" placeholder="Contraseña"><br></p>
+
+                    <p><label for="repcontra">Rep. Contraseña: </label><br>
+                        <input type="password" name="pass2" id="" required minlength="5" maxlength="20" size="37"
+                            inputmode="verbatim" placeholder="Repetir Contraseña"><br></p>
+
+                    <p>Código Postal: <br>
+                        <input type="text" name="postal" maxlength="5" required placeholder="Código Postal" size="37">
+                    </p>
+
+                    <p>
+                        <h3>Datos Personales</h3>
+                    </p>
+                    <p>
+                        <label for="genero">Sexo: </label>
+                        <input type="radio" name="genero" value="masculino" required>Masculino
+                        <input type="radio" name="genero" value="femenino" checked required>Femenino
+                    </p>
+
+                    <label for="poblacion">Ciudad: </label>
+                    <select name="pobla" id="" required>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Barcelona">Barcelona</option>
+                        <option value="Bilbao">Bilbao</option>
+                        <option value="Málaga">Málaga</option>
+                        <option value="Oporto">Oporto</option>
+                        <option value="Lisboa">Lisboa</option>
+                        <option value="Londres">Londres</option>
+                        <option value="NY">NY</option>
+
+
+
+                    </select>
+
+                    <p>Legalidades:</p>
+                    <input type="checkbox" name="nov_ofer" id="" required>
+                    Acepto los términos y condiciones
+                    <p></p>
+                    <input type="image" src="registrar.png" alt="Enviar">
+                    <input type="image" src="reiniciar.png" alt="reset">
+                    </font>
+                </form>
+            </td>
+        </tr>
+        </font>
+    </table>
+</body>
+
+</html>

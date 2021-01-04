@@ -1,0 +1,43 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(informatica.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: red;
+    border: 2px salmon solid;
+    border-radius: 5px;
+    /*float: left;*/
+    display: inline;
+    text-align: center;
+    width: 5em;
+    margin-right: 10px;
+    padding: 0px 4px;
+}
+
+a {
+    color: whitesmoke;
+    padding: 0px 4px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: turquoise;
+    color: red;
+}

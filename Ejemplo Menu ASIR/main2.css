@@ -1,0 +1,68 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+header {
+    margin: auto;
+    width: 350px;
+    font-family: "Arial Narrow";
+}
+
+ul {
+    list-style: none;
+}
+
+
+/*A continuación, daremos estilo a nuestro menú principal. que está contenido en la calse nav*/
+
+.nav li a {
+    /*Los elementos a que están en el li directamente dependientes de la clase nav,
+    heredarán las propiedades que les indicaremos a continuación*/
+    background-color: darkred;
+    color: rgb(0, 194, 10);
+    text-decoration: none;
+    padding: 10px 15px;
+    /*Por defecto, los eslementos están en línea, y si los dejamos como tal se solaparían.
+    Los convertimos a block y conseguimos un resultado de un conjunto de cajas alineadas*/
+    display: block;
+}
+
+.nav li a:hover {
+    background-color: darksalmon;
+}
+
+.nav>li {
+    /*Indicamos que los elementos directos li que están en nav, tendrán las siguientes características*/
+    float: left;
+}
+
+.nav li ul {
+    /*Ocultamos los submenus, y luego los mostraremos*/
+    display: none;
+    /*Establezco la posición absoluta a los submenus, con un tamaño mínimo de anchura para que sean iguales*/
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover>ul {
+    /*Mostramos los submenus cuando solo pasamos el ratón por encima de la opción marcada*/
+    display: block;
+}
+
+.nav li ul li {
+    position: relative;
+}
+
+.nav li ul li ul {
+    left: -140px;
+    top: 0px;
+}

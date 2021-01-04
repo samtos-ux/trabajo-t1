@@ -1,0 +1,181 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background-color: #fffacd;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: large;
+  padding: 10px;
+}
+
+#menu {
+  background-color: #229954;
+  padding: 8px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+#logo {
+  padding: 3px;
+  width: 105px;
+  float: left;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  color: white;
+  display: block;
+  padding: 22px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  background-color: cadetblue;
+}
+
+.container {
+  margin: auto;
+  background-color: whitesmoke;
+  width: 1000px;
+  padding: 30px;
+}
+
+ul.slider {
+  position: relative;
+  width: 1000px;
+  height: 300px;
+}
+
+ul.slider li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity 0.5s;
+}
+
+ul.slider li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1;
+}
+
+ul.slider li:target {
+  opacity: 1;
+}
+
+.menuslide {
+  text-align: center;
+  margin: 20px;
+}
+
+.menuslide li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menuslide li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #229954;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+h2 {
+  text-align: justify;
+  padding: 30px;
+  padding-left: 40px;
+}
+
+.tresColum {
+  margin: auto;
+  width: 1000px;
+  height: 800px;
+  padding: 30px;
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+}
+
+#insta h2, p{
+    padding-top: 52px;
+    color: black;
+    text-align: center;
+}
+
+
+#insta{
+    background-image: url(/Proyecto_T1/img/instalaciones.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    width: 1000px;
+    height: 450px;
+}
+
+#cabecera {
+    background-image: url(/Proyecto_T1/img/fondo_servicios.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    width: 1000px;
+    height: 550px;
+}
+
+#tablas {
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    width: 1000px;
+}
+
+#tablas table tr td img {
+    padding: 15px;
+    width: 200px;
+}
+
+#tablas table tr td p {
+    color: gray;
+    text-align: justify;
+}
+
+section{
+    display: block;
+}
+
+.contact-form h3, input, label, button{
+    padding: 5px;
+    color: black;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    color: #7a7a7a;
+    width: 100%;
+}

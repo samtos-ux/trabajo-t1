@@ -1,0 +1,51 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	background-image: url(fondo.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+header{
+	text-align: center;
+	margin:auto;
+	width: 550px;
+	font-family: "Verdana";
+}
+ul{
+	list-style: none;
+}
+.nav li a{
+	background-color: purple;
+	color:beige;
+	text-decoration:none;
+	padding:10px 15px;
+	display:block;
+
+}
+.nav li a:hover{
+	background-color:plum;
+	color:purple;
+	opacity: 0.5;
+}
+.nav >li{
+	float:left;
+}
+.nav li ul{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+.nav li:hover > ul{
+	display: block;
+}
+.nav li ul li{
+	position: relative;
+}
+.nav li ul li ul{
+	right: -145px;
+	top:0px;
+}

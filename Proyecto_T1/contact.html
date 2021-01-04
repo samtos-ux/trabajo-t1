@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/Proyecto_T1/img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="misEstilos.css" />
+    <title>Contacte con nosotros</title>
+</head>
+
+<body>
+    <div id="menu">
+        <img id="logo" src="/Proyecto_T1/img/samcom_3.png" alt="" />
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="who.html">Sobre nosotros</a></li>
+            <li><a href="instalaciones.html">Instalaciones</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="produc.html">Productos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!--Formulario de contacto-->
+    <section class="contact-form">
+        <form action="mailto:raul.rodriguez@universidadeuropea.es" method="post" name="formulario_contacto">
+
+
+            <section class="form-fields">
+
+                <h3>Contacte con nosotros</h3>
+
+                <label>Asunto</label><br>
+
+                <select name="Asunto">
+                    <option value="2">Servicio al cliente</option>
+                    <option value="1">Webmaster</option>
+                </select><br>
+
+                <label>Dirección de correo electrónico</label><br>
+
+                <input name="from" type="email" value="" placeholder="su@email.com"><br>
+
+
+
+                <label>Archivo adjunto</label><br>
+
+                <input type="file" name="fileUpload" class="filestyle" data-buttontext="Seleccionar archivo"
+                    id="filestyle-0" tabindex="-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);">
+                <div class="bootstrap-filestyle input-group"><input type="text" class="form-control " placeholder=""
+                        disabled=""> <span class="group-span-filestyle input-group-btn" tabindex="0"><label
+                            for="filestyle-0" class="btn btn-default "><span
+                                class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span
+                                class="buttonText">Seleccionar archivo</span></label></span></div><br>
+
+
+
+
+                <label class="col-md-3 form-control-label">Mensaje</label><br>
+
+                <textarea name="message" placeholder="¿Cómo podemos ayudarle?" rows="3"></textarea>
+
+
+
+                <br>
+                <input class="btn btn-primary" type="submit" name="submitMessage" value="Enviar">
+                <button type="reset">Borrar</button>
+
+            </section>
+
+
+
+
+        </form>
+    </section>
+</body>
+
+</html>

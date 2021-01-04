@@ -1,0 +1,50 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    background-image: url(foto1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+header{
+    margin:auto;
+    width: 450px;
+    font-family: "Broadway";
+}
+ul{
+    list-style: none;
+}
+.nav li a{
+    text-align: center;
+    background-color: darkred;
+    color:azure;
+    text-decoration: none;
+    padding: 10px 15px;
+    display:block;
+    /*border-radius: 50%;*/
+}
+.nav li a:hover{
+    background-color: darksalmon;
+}
+.nav > li{
+    float: left;
+    
+}
+.nav li ul{
+    display:none;
+    position:absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li{
+    position:relative;
+}
+.nav li ul li ul{
+    right: -140px;
+    top:0px;
+}
